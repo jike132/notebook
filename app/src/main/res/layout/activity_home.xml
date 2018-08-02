@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_weight="3"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/goback"
+        android:src="@drawable/goback"
+        android:background="#ffffffff"
+        android:layout_weight="3"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="22dp" />
+    <TextView
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="22dp"
+        android:text="编辑记事本"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/save"
+        android:scaleType="fitXY"
+        android:background="#ffffffff"
+        android:layout_weight="3"
+        android:src="@drawable/ensure"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+</LinearLayout>
+    <TextView
+      android:layout_weight="3.2"
+        android:background="#acacac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/tittle"
+            android:layout_marginTop="8dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:background="@color/text"
+            android:hint="请输入标题"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/noteId"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/content"
+          android:layout_weight="1"
+            android:gravity="top"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
